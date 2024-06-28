@@ -48,10 +48,10 @@
                     <div class="gh-head-members">
                         {{#unless @member}}
                             {{#unless @site.members_invite_only}}
-                                <a class="gh-head-link" href="#/portal/signin" data-portal="signin">Zaloguj się</a>
-                                <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signup" data-portal="signup">Zasubskrybuj</a>
+                                <a class="gh-head-link" href="#/portal/signin" data-portal="signin">Logowanie</a>
+                                <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signup" data-portal="signup">Zapisuję się na newsletter</a>
                             {{else}}
-                                <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signin" data-portal="signin">Zaloguj się</a>
+                                <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signin" data-portal="signin">Logowanie</a>
                             {{/unless}}
                         {{else}}
                             <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/account" data-portal="account">Konto</a>
@@ -68,15 +68,15 @@
     {{#unless @member}}
         <div class="gh-subscribe-wrapper gh-canvas">
             <section class="gh-subscribe">
-                <h3 class="gh-subscribe-title">Zasubskrybuj {{@site.title}}</h3>
+                <h3 class="gh-subscribe-title">Zapisuję się do newslettera {{@site.title}}</h3>
 
-                <div class="gh-subscribe-description">Zapisz się teraz, aby uzyskać dostęp do postów dla subskrybujących.</div>
+                <div class="gh-subscribe-description">Życie w Irlandii, popkultura, neuroatypowość.</div>
 
                 <a class="gh-subscribe-input u-hover" href="#/portal/signup" data-portal="signup">
                     Jamie Larson
                     <div class="gh-subscribe-input-btn">
                         <div class="u-hover-inner">
-                            Zasubskrybuj
+                            Zapisuję się
                             <span class="u-hover-arrow">{{> icons/chevron-right}}</span>
                             <span class="u-hover-arrow">{{> icons/chevron-right}}</span>
                         </div>
